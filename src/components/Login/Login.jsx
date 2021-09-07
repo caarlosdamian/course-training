@@ -1,5 +1,5 @@
 import "./login.css";
-import gmail from "../assets/gmail01.png";
+import gmail from "../../assets/gmail01.png";
 const Login = () => {
   return (
     <div className="container">
@@ -57,6 +57,10 @@ const Login = () => {
               <img className="form-container-icon" src={gmail} alt="" />
               <span>Sign-in with google</span>
             </button>
+            <span className="fomr-container-span-register">
+              Dont have an account?
+              <a href="/">Join free today</a>
+            </span>
           </div>
         </form>
       </div>

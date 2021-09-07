@@ -75,6 +75,7 @@
   height: 20px;
   border-radius: 5px;
   outline: none;
+  cursor: text;
 }
 .form-container-btn {
   height: 50px;
@@ -98,4 +99,11 @@
 .form-container-icon {
   height: 20px;
   margin-right: 10px;
+}
+.fomr-container-span-register{
+  margin-top: 50px;
+  margin-left: 40px;
+}
+.fomr-container-span-register >a{
+  margin-left: 10px;
 }

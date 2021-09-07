@@ -1,0 +1,16 @@
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(243, 231, 231);
+  position: static;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.header-left {
+  margin-top: 10px;
+}
+.header-right {
+  margin-top: 10px;
+}
