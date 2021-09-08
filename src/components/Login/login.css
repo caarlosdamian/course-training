@@ -108,3 +108,11 @@
 .fomr-container-span-register >a{
   margin-left: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  .left > img {
+    height: 250px;
+    width: 10px;
+    color: brown;
+  }
+}

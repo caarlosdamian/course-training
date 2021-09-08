@@ -5,6 +5,7 @@ import Login from "./components/Login/Login";
 import PrivateRoute from "./components/Routes/PrivateRoute";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Header from "./components/Header/Header";
 
 function App() {
   const [isAuth, setIsAuth] = useState(window.localStorage.getItem("isAuth"));
@@ -17,6 +18,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <Header isAuth={isAuth} />
         <Switch>
           <Route path="/" exact>
             <Login setIsAuth={setIsAuth} isAuth={isAuth} />

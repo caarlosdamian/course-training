@@ -1,14 +1,18 @@
-import './header.css'
+import "./header.css";
 
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="header-container">
-        <div className="header-left">Home</div>
-        <div className="header-right">IconMenu</div>
+
+const Header = ({ isAuth }) => {
+  if (isAuth) {
+    return (
+      <div className="header">
+        <div className="header-container">
+          <div className="header-left">Home</div>
+          <div className="header-right">IconMenu</div>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
+  return <div></div>;
 };
 
 export default Header;
