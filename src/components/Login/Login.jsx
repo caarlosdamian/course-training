@@ -1,6 +1,22 @@
 import "./login.css";
 import gmail from "../../assets/gmail01.png";
+import { useHistory } from "react-router";
+import { useState } from "react";
 const Login = () => {
+  const history = useHistory();
+  const [user, setUser] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleOnchange = (e) => {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    window.localStorage.setItem("isAuth", user.email);
+    history.push("/home");
+  };
   return (
     <div className="container">
       <div className="left">
@@ -10,7 +26,7 @@ const Login = () => {
         />
       </div>
       <div className="right">
-        <form className="right-form">
+        <form onSubmit={handleSubmit} className="right-form">
           <div className="form-container">
             <div className="form-container-headers">
               <h6 className="form-container-subheader">Welcome back</h6>
@@ -18,13 +34,19 @@ const Login = () => {
             </div>
             <span className="form-container-span">Email</span>
             <input
+              required
+              onChange={handleOnchange}
+              name="email"
               className="form-container-input"
-              type="text"
+              type="email"
               placeholder="dapecarlos
             @gmail.com"
             />
             <span className="form-container-span">Password</span>
             <input
+              required
+              onChange={handleOnchange}
+              name="password"
               className="form-container-input"
               type="password"
               placeholder="********"
