@@ -1,19 +1,20 @@
 .container {
-  display: flex;
-  justify-content: center;
-}
-.left {
-  background-color: #f3f3f3;
+  width: 100vw;
   height: 100vh;
-  width: 100%;
-}
-.left > img {
-  height: 100%;
-  width: 100%;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .right {
-  background-color: white;
+  /* background-color: white; */
   height: 100vh;
   width: 100%;
   display: flex;
@@ -31,13 +32,13 @@
   border: solid 1px black;
   border-radius: 5px;
   padding: 100px;
+  background-color: white;
 }
-.form-container-headers{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-
+.form-container-headers {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .form-container-subheader {
   width: 120px;
@@ -46,9 +47,9 @@
   margin-bottom: 10px;
 }
 .form-container-header {
-    font-size: 30px;
-    margin-top: 5px;
-} 
+  font-size: 30px;
+  margin-top: 5px;
+}
 .form-container-span {
   margin-left: 1px;
   font-size: 14px;
@@ -101,10 +102,10 @@
   height: 20px;
   margin-right: 10px;
 }
-.fomr-container-span-register{
+.fomr-container-span-register {
   margin-top: 50px;
   margin-left: 40px;
 }
-.fomr-container-span-register >a{
+.fomr-container-span-register > a {
   margin-left: 10px;
 }

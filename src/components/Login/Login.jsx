@@ -3,12 +3,6 @@ import gmail from "../../assets/gmail01.png";
 const Login = () => {
   return (
     <div className="container">
-      <div className="left">
-        <img
-          src="https://mobirise.com/bootstrap-carousel/assets2/images/thomas-smith-399133-1707x2560.jpg"
-          alt="mountain"
-        />
-      </div>
       <div className="right">
         <form className="right-form">
           <div className="form-container">
